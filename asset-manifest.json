@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/seedvault/static/css/main.f855e6bc.css",
-    "main.js": "/seedvault/static/js/main.f5fac227.js",
+    "main.css": "/seedvault/static/css/main.fd7d7c3d.css",
+    "main.js": "/seedvault/static/js/main.c7f28909.js",
     "static/js/453.c662ce14.chunk.js": "/seedvault/static/js/453.c662ce14.chunk.js",
-    "static/media/logo.svg": "/seedvault/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/seedvault/index.html",
-    "main.f855e6bc.css.map": "/seedvault/static/css/main.f855e6bc.css.map",
-    "main.f5fac227.js.map": "/seedvault/static/js/main.f5fac227.js.map",
+    "main.fd7d7c3d.css.map": "/seedvault/static/css/main.fd7d7c3d.css.map",
+    "main.c7f28909.js.map": "/seedvault/static/js/main.c7f28909.js.map",
     "453.c662ce14.chunk.js.map": "/seedvault/static/js/453.c662ce14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.f5fac227.js"
+    "static/css/main.fd7d7c3d.css",
+    "static/js/main.c7f28909.js"
   ]
 }
