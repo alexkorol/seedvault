@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/seedvault/static/css/main.657c32f0.css",
-    "main.js": "/seedvault/static/js/main.9571129c.js",
+    "main.css": "/seedvault/static/css/main.f3288636.css",
+    "main.js": "/seedvault/static/js/main.da34fa9e.js",
     "static/js/453.c662ce14.chunk.js": "/seedvault/static/js/453.c662ce14.chunk.js",
     "index.html": "/seedvault/index.html",
-    "main.657c32f0.css.map": "/seedvault/static/css/main.657c32f0.css.map",
-    "main.9571129c.js.map": "/seedvault/static/js/main.9571129c.js.map",
+    "main.f3288636.css.map": "/seedvault/static/css/main.f3288636.css.map",
+    "main.da34fa9e.js.map": "/seedvault/static/js/main.da34fa9e.js.map",
     "453.c662ce14.chunk.js.map": "/seedvault/static/js/453.c662ce14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.657c32f0.css",
-    "static/js/main.9571129c.js"
+    "static/css/main.f3288636.css",
+    "static/js/main.da34fa9e.js"
   ]
 }
