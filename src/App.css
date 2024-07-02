@@ -1,6 +1,10 @@
 .App {
   text-align: center;
   transition: background-color 0.3s, color 0.3s;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .App.dark {
@@ -38,6 +42,9 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .sref-card {
@@ -48,7 +55,16 @@
   cursor: pointer;
   background-color: #2a2a2a;
   border-radius: 10px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+.sref-card.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .sref-card:hover {
@@ -73,32 +89,6 @@
   padding: 2px 5px;
   margin: 2px;
   border-radius: 3px;
-}
-
-.rating {
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.star {
-  font-size: 20px;
-  color: #ccc;
-  transition: color 0.3s;
-}
-
-.star.active {
-  color: gold;
-}
-
-.favorite {
-  cursor: pointer;
-  font-size: 20px;
-  color: #ccc;
-  transition: color 0.3s;
-}
-
-.favorite.active {
-  color: red;
 }
 
 .App.light .sref-card {
