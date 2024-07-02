@@ -21,7 +21,15 @@ function App() {
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <div className="sref-container">
         {sampleSrefs.map(sref => (
-          <SrefCard key={sref.id} sref={sref} />
+          <div key={sref.id} className="sref-card">
+            <img src={sref.image} alt={sref.description} className="sref-image" />
+            <p>{sref.description}</p>
+            <div className="tags">
+              {sref.tags.map((tag, index) => (
+                <span key={index} className="tag">{tag}</span>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </div>
