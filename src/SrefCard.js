@@ -2,11 +2,20 @@ import React, { useState } from 'react';
 import './App.css';
 
 const SrefCard = ({ sref }) => {
-  const [isFavorite, setIsFavorite] = useState(false);
-  const [rating, setRating] = useState(0);
+  const [cardState, setCardState] = useState({ isFavorite: false, rating: 0 });
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(`--sref ${sref.sref}`);
+    navigator.clipboard.writeText(`--sref ${sref.sref}`).catch(err => {
+      console.error('Failed to copy text: ', err);
+    });
+  };
+
+  const toggleFavorite = () => {
+    setCardState(prevState => ({ ...prevState, isFavorite: !prevState.isFavorite }));
+  };
+
+  const setRating = (ratingValue) => {
+    setCardState(prevState => ({ ...prevState, rating: ratingValue }));
   };
 
   return (
@@ -25,13 +34,13 @@ const SrefCard = ({ sref }) => {
           return (
             <span
               key={index}
-              className={ratingValue <= rating ? 'star active' : 'star'}
+              className={ratingValue <= cardState.rating ? 'star active' : 'star'}
               onClick={() => setRating(ratingValue)}
             >★</span>
           );
         })}
       </div>
-      <button className={isFavorite ? 'favorite active' : 'favorite'} onClick={() => setIsFavorite(!isFavorite)}>
+      <button className={cardState.isFavorite ? 'favorite active' : 'favorite'} onClick={toggleFavorite}>
         ♥
       </button>
     </div>
