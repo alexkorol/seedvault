@@ -5,6 +5,7 @@
   padding: 0 20px;
   box-sizing: border-box;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .App.dark {
@@ -55,10 +56,11 @@
   cursor: pointer;
   background-color: #2a2a2a;
   border-radius: 10px;
-  transition: transform 0.3s, opacity 0.5s, visibility 0.5s;
+  transition: transform 0.3s, opacity 0.5s, visibility 0.5s, box-shadow 0.3s;
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .sref-card.visible {
@@ -69,6 +71,7 @@
 
 .sref-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .sref-image {
@@ -94,4 +97,11 @@
 .App.light .sref-card {
   background-color: #f0f0f0;
   color: #1a1a1a;
+  border: 1px solid #ccc; /* Lighter border color */
+}
+
+.copy-indicator {
+  color: #61dafb;
+  margin-top: 10px;
+  font-weight: bold;
 }

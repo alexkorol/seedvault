@@ -2,10 +2,15 @@ import React, { useState } from 'react';
 import './App.css';
 
 const SrefCard = ({ sref }) => {
-  const [cardState, setCardState] = useState({ isFavorite: false, rating: 0 });
+  const [cardState, setCardState] = useState({ isFavorite: false, rating: 0, copied: false });
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(`--sref ${sref.sref}`).catch(err => {
+    navigator.clipboard.writeText(`--SREF ${sref.sref}`).then(() => {
+      setCardState(prevState => ({ ...prevState, copied: true }));
+      setTimeout(() => {
+        setCardState(prevState => ({ ...prevState, copied: false }));
+      }, 2000);
+    }).catch(err => {
       console.error('Failed to copy text: ', err);
     });
   };
@@ -43,6 +48,7 @@ const SrefCard = ({ sref }) => {
       <button className={cardState.isFavorite ? 'favorite active' : 'favorite'} onClick={toggleFavorite}>
         ♥
       </button>
+      {cardState.copied && <span className="copy-indicator">Copied!</span>}
     </div>
   );
 };
