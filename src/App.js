@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import ThemeToggle from './ThemeToggle';
-import SrefCard from './SrefCard';
 import srefsData from './data/srefs.json';
 
 function App() {
@@ -39,7 +38,7 @@ function App() {
       <div className="sref-container">
         {srefsData.map((sref, index) => (
           <div className={`sref-card ${visibleCards.includes(index) ? 'visible' : ''}`} key={sref.id}>
-            <img src={`/images/srefs/${sref.image}`} alt={sref.description} className="sref-image" />
+            <img src={`${process.env.PUBLIC_URL}/images/srefs/${sref.sref}.jpg`} alt={sref.description} className="sref-image" />
             <p>{sref.description}</p>
             <div className="tags">
               {sref.tags.map((tag, tagIndex) => (
