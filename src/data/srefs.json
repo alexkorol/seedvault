@@ -18,5 +18,21 @@
   { "id": 17, "image": "924682458.jpg", "description": "grimy dark blue collage", "tags": ["paint", "collage", "dark", "grimy", "grunge", "moody", "blending", "macabre"], "sref": "924682458" },
   { "id": 18, "image": "208723410.jpg", "description": "bloodied pink porcelain", "tags": ["surreal", "neon", "dripping", "oriental", "glossy", "sculpture"], "sref": "208723410" },
   { "id": 19, "image": "1533443107.jpg", "description": "dark futuristic print", "tags": ["dark", "monochromatic", "sci-fi", "dystopian", "mechanical", "textured", "print", "silhouette"], "sref": "1533443107" },
-  { "id": 20, "image": "1368324079.jpg", "description": "monochromatic esheresque opart drawing", "tags": ["surreal", "fragmented", "esheresque", "drawing", "monochromatic", "photorealistic"], "sref": "1368324079" }
+  { "id": 20, "image": "1368324079.jpg", "description": "monochromatic esheresque opart drawing", "tags": ["surreal", "fragmented", "esheresque", "drawing", "monochromatic", "photorealistic"], "sref": "1368324079" },
+  { "id": 21, "image": "1355881261.jpg", "description": "Frutiger Aero Cybernetic", "tags": ["Colorful", "Futuristic", "Digital Art", "Rendered", "Frutiger Aero"], "sref": "1355881261" },
+  { "id": 22, "image": "2227832711.jpg", "description": "Golden Luminescent Cybernetic", "tags": ["Futuristic", "golden", "digital art", "photorealistic", "sci-fi", "luminescent", "glowing"], "sref": "2227832711" },
+  { "id": 23, "image": "380931702.jpg", "description": "3d shipibo beadwork trip", "tags": ["3d", "ayahuasca", "psychedelic", "trippy", "intricate", "dmt", "colorful"], "sref": "380931702" },
+  { "id": 24, "image": "3191947228.jpg", "description": "Grotesque glossy ogre", "tags": ["Surreal", "sculpted", "horror", "glossy", "dripping", "macabre", "photorealistic"], "sref": "3191947228" },
+  { "id": 25, "image": "465790898.jpg", "description": "Clean geometric Futuristic Illustration", "tags": ["Digital art", "geometric", "steampunk", "playful", "blue", "orange", "yellow", "vector"], "sref": "465790898" },
+  { "id": 26, "image": "3281586899.jpg", "description": "Photorealistic Biomechanical Cybernetic Photos", "tags": ["biomechanical", "sci-fi", "film", "boken", "photographic", "cybernetic"], "sref": "3281586899" },
+  { "id": 27, "image": "647489099.jpg", "description": "Intricate stippling drawing", "tags": ["Dotwork", "textured", "fantasy", "blue", "white", "surreal", "pattern", "detailed"], "sref": "647489099" },
+  { "id": 28, "image": "2119901188.jpg", "description": "Retro-futuristic grunge art", "tags": ["textured", "grunge", "digital art", "retro-futuristic", "distressed", "glitch", "cyberpunk"], "sref": "2119901188" },
+  { "id": 29, "image": "42905634.jpg", "description": "Quaint soft whimsy", "tags": ["Painterly", "bokeh", "detailed", "red", "whimsical", "photographic", "painting", "realistic", "cute"], "sref": "42905634" },
+  { "id": 30, "image": "3523626364.jpg", "description": "Retro-futuristic 50's comic", "tags": ["Mechanical", "comics", "illustration", "bold", "sci-fi", "vintage"], "sref": "3523626364" },
+  { "id": 31, "image": "1853013841.jpg", "description": "Dreamy blue painting with geometric elements", "tags": ["Abstract", "digital painting", "concept art", "ethereal", "soft", "watercolor", "minimalist"], "sref": "1853013841" },
+  { "id": 32, "image": "556166738.jpg", "description": "Pastel linework 3d render", "tags": ["Pastel", "3d", "whimsical", "dreamlike", "artistic", "detailed", "bokeh", "outlines"], "sref": "556166738" },
+  { "id": 33, "image": "1261368790.jpg", "description": "Monstrous rendered zbrush detail", "tags": ["3d", "render", "red", "detailed", "sharp", "intense", "CGI", "realistic", "monster"], "sref": "1261368790" },
+  { "id": 34, "image": "2284909507.jpg", "description": "Foggy algae debris macro photo", "tags": ["soft", "diorama", "organic", "decaying", "debris", "muted", "earth tones", "delicate"], "sref": "2284909507" },
+  { "id": 35, "image": "1907171538.jpg", "description": "Macabre cybernetic glossy bloodshot realism", "tags": ["photography", "cyberpunk", "detailed", "realistic", "skin"], "sref": "1907171538" },
+  { "id": 36, "image": "2931312221.jpg", "description": "High-contrast gritty banksy splatter", "tags": ["Fragmented", "splatter", "decay", "gritty", "grunge", "monochrome", "intense"], "sref": "2931312221" }
 ]

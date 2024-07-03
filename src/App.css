@@ -18,24 +18,54 @@
   color: #1a1a1a;
 }
 
-.theme-toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 10px;
-  cursor: pointer;
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.top-bar.dark {
   background-color: #333;
   color: #f0f0f0;
+}
+
+.top-bar.light {
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+}
+
+.theme-toggle {
+  padding: 10px;
+  cursor: pointer;
   border: none;
   border-radius: 50%;
   transition: background-color 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto; /* Ensures the toggle stays on the right side */
+  margin-right: 20px; /* Add some right margin to prevent clipping */
+}
+
+.theme-toggle.dark {
+  background-color: #555;
+  color: #f0f0f0;
+}
+
+.theme-toggle.light {
+  background-color: #ccc;
+  color: #1a1a1a;
 }
 
 .theme-toggle:hover {
-  background-color: #555;
+  background-color: #777;
 }
 
 .sref-container {
@@ -46,13 +76,14 @@
   overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 60px; /* Add margin to prevent cards from overlapping with the top bar */
 }
 
 .sref-card {
   border: 1px solid #444;
   margin: 10px;
   padding: 20px;
-  width: 200px;
+  width: calc(25% - 20px); /* Adjusted for 3 columns on desktop */
   cursor: pointer;
   background-color: #2a2a2a;
   border-radius: 10px;
@@ -61,6 +92,12 @@
   visibility: hidden;
   transform: translateY(20px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .sref-card {
+    width: calc(100% - 20px); /* 1 column on mobile */
+  }
 }
 
 .sref-card.visible {
@@ -76,8 +113,17 @@
 
 .sref-image {
   width: 100%;
-  height: auto;
+  height: auto; /* Adjust height to auto to maintain aspect ratio */
+  position: relative;
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.sref-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the area without distortion */
 }
 
 .tags {
@@ -94,6 +140,50 @@
   border-radius: 3px;
 }
 
+.tag-bubble {
+  background-color: #61dafb;
+  color: white;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px; /* Adjusted to position on the left side */
+  z-index: 1001;
+  transition: left 0.3s ease-in-out; /* Add transition for smooth movement */
+}
+
+.tag-bubble.move-right {
+  left: calc(10px + 200px); /* Increase the distance to ensure it doesn't overlap with the copy message */
+}
+
+.copy-indicator {
+  color: #61dafb;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 10px;
+  z-index: 1001;
+}
+
+.copy-indicator.fade-in {
+  opacity: 1;
+}
+
+.tag-bubble .close-icon {
+  margin-left: 5px;
+  font-size: 12px;
+}
+
 .App.light .sref-card {
   background-color: #f0f0f0;
   color: #1a1a1a;
@@ -102,6 +192,19 @@
 
 .copy-indicator {
   color: #61dafb;
-  margin-top: 10px;
   font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 10px;
+  z-index: 1001;
+}
+
+.copy-indicator.fade-in {
+  opacity: 1;
 }
