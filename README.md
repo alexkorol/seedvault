@@ -82,6 +82,30 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Utility Scripts
+
+This project includes utility scripts to assist with organizing and processing SREF images:
+
+- **makefolder.py**: This script creates folders based on a list of SREF numbers provided in a text file. Each line in the text file corresponds to a folder name. The script will create these folders in the specified directory if they do not already exist.
+
+- **makegrid.py**: This script creates a 2x2 grid of images from a specified folder. It sorts the images based on predefined keys and then arranges them into a single image of size 1024x1024 pixels. The resulting image is saved both as a PNG and a JPEG with a quality level of 70.
+
+### Usage
+
+To use these scripts, ensure you have Python installed along with the necessary libraries (e.g., `Pillow` for `makegrid.py`). Run the scripts from the command line by navigating to the directory containing the scripts and executing them with Python.
+
+Example for `makefolder.py`:
+```sh
+python scripts/makefolder.py
+```
+
+Example for `makegrid.py`:
+```sh
+python scripts/makegrid.py
+```
+
+Make sure to configure the paths within the scripts according to your file system setup before running them.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
